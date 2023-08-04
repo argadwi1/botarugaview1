@@ -1,7 +1,7 @@
 from selenium import webdriver
 
 # Ganti dengan path ke file ChromeDriver di sistem Anda
-chrome_driver_path = '/home/argadwiihsanulridha/.local/lib/python3.9/site-packages/selenium/webdriver/'
+chrome_driver_path = '/usr/bin/google-chrome'
 
 # Inisialisasi Chrome WebDriver
 driver = webdriver.Chrome(executable_path=chrome_driver_path)
