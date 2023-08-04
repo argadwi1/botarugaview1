@@ -1,10 +1,15 @@
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 
 # Ganti dengan path ke file ChromeDriver di sistem Anda
-chrome_driver_path = '/usr/bin/google-chrome'
+chrome_driver_path = '/usr/local/bin/chromedriver'
 
-# Inisialisasi Chrome WebDriver
-driver = webdriver.Chrome(executable_path=chrome_driver_path)
+# Inisialisasi ChromeOptions dan tentukan path ke ChromeDriver
+chrome_options = Options()
+chrome_options.binary_location = '/usr/bin/google-chrome'  # Ganti dengan path ke Chrome executable
+
+# Aktifkan ChromeOptions saat inisialisasi Chrome WebDriver
+driver = webdriver.Chrome(options=chrome_options)
 
 # Buka halaman web dengan video
 video_url = "https://web.facebook.com/watch/?v=1327787108138374"  # Ganti dengan URL video yang ingin ditonton
