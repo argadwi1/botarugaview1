@@ -1,7 +1,7 @@
 from selenium import webdriver
 
 # Inisialisasi browser
-driver = webdriver.Chrome()  # Ganti dengan browser yang sesuai (misalnya, Firefox atau Edge)
+driver = webdriver.Chrome(executable_path='/home/argadwiihsanulridha/.local/lib/python3.9/site-packages/selenium/webdriver/')  # Ganti dengan browser yang sesuai (misalnya, Firefox atau Edge)
 
 # Buka halaman web dengan video
 video_url = "https://web.facebook.com/watch/?v=1327787108138374"  # Ganti dengan URL video yang ingin ditonton
